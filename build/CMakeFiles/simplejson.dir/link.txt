@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/simplejson.dir/main.cpp.o  -o simplejson  -Wl,-rpath,/home/maksym/local/arm64/myjsoncpp64/lib: ../lib/libjsoncpp.so 

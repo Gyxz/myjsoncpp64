@@ -44,16 +44,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maksym/local/arm64
+CMAKE_SOURCE_DIR = /home/maksym/local/arm64/myjsoncpp64
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maksym/local/arm64/build
+CMAKE_BINARY_DIR = /home/maksym/local/arm64/myjsoncpp64/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/simplejson.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/simplejson.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/simplejson.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maksym/local/arm64/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/simplejson.dir/all:
+	$(MAKE) -f CMakeFiles/simplejson.dir/build.make CMakeFiles/simplejson.dir/depend
+	$(MAKE) -f CMakeFiles/simplejson.dir/build.make CMakeFiles/simplejson.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/maksym/local/arm64/myjsoncpp64/build/CMakeFiles --progress-num=1,2 "Built target simplejson"
+.PHONY : CMakeFiles/simplejson.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+CMakeFiles/simplejson.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/myjsoncpp64/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/simplejson.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/myjsoncpp64/build/CMakeFiles 0
+.PHONY : CMakeFiles/simplejson.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+simplejson: CMakeFiles/simplejson.dir/rule
 
-.PHONY : main
+.PHONY : simplejson
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/simplejson.dir/clean:
+	$(MAKE) -f CMakeFiles/simplejson.dir/build.make CMakeFiles/simplejson.dir/clean
+.PHONY : CMakeFiles/simplejson.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

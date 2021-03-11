@@ -16,13 +16,15 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR}
 
 set(INSTALL_BINDIR ${CMAKE_INSTALL_BINDIR} CACHE PATH "Installation directory for executables")
 
-add_executable(main main.cpp)
+add_executable(simplejson main.cpp)
 
-target_link_libraries(main ${CMAKE_SOURCE_DIR}/lib/libjsoncpp.a)
+FIND_LIBRARY(MY_LIB NAMES jsoncpp PATHS ${CMAKE_SOURCE_DIR}/lib)
+
+target_link_libraries(simplejson ${MY_LIB})
 
 install(
 TARGETS
-main
+simplejson
 RUNTIME
 DESTINATION ${INSTALL_BINDIR}
 COMPONENT bin

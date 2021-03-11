@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maksym/local/arm64
+CMAKE_SOURCE_DIR = /home/maksym/local/arm64/myjsoncpp64
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maksym/local/arm64/build
+CMAKE_BINARY_DIR = /home/maksym/local/arm64/myjsoncpp64/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/build/CMakeFiles /home/maksym/local/arm64/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/myjsoncpp64/build/CMakeFiles /home/maksym/local/arm64/myjsoncpp64/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksym/local/arm64/myjsoncpp64/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -157,17 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named simplejson
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+simplejson: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simplejson
+.PHONY : simplejson
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+simplejson/fast:
+	$(MAKE) -f CMakeFiles/simplejson.dir/build.make CMakeFiles/simplejson.dir/build
+.PHONY : simplejson/fast
 
 main.o: main.cpp.o
 
@@ -175,7 +175,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/simplejson.dir/build.make CMakeFiles/simplejson.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -184,7 +184,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/simplejson.dir/build.make CMakeFiles/simplejson.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -193,7 +193,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/simplejson.dir/build.make CMakeFiles/simplejson.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -208,7 +208,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
+	@echo "... simplejson"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
